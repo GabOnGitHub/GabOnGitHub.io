@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'RalewayLight';
+  src: url(../font/RalewayLight.ttf);
+}
+
+* {
+  font-family: RalewayLight;
+}
+
+body{
+  background-color: snow;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  padding: 10% 10% 0 10%;
+  row-gap: 5%;
+}
+
+.introContainer{
+  display: grid;
+  grid-template-rows: 15% 30% 7% 5%;
+  height: 70vh;
+  padding: 5% 0 0 10%;
+}
+.introContainer h3{
+  margin-bottom: 0;
+}
+.socialIcons img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.introduction{
+  display: grid;
+  grid-template-columns: auto 50%;
+  grid-template-rows: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.introduction h1{
+  max-width: 100%;
+  max-height: 100%;
+}
+.introduction img{
+  max-width: 120%;
+  max-height: 120%;
+  padding-left: 10%;
+}
+
+.highlight {
+  background-color: rgb(113, 123, 253);
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.email{
+  text-decoration: underline;
+  text-decoration-color: rgb(113, 123, 253);
+  color: black;
+}
+
+.email:hover{
+  background-color: rgb(113, 123, 253);
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.skillsContainer{
+  display: grid;
+  grid-template-columns: 10% auto;
+}
+.skillsContainer h3{
+  margin: 0;
+}
+.skillList{
+  display: grid;
+  grid-template-columns: 10% 15% auto;
+}
+.skillList .title{
+  grid-row: 1/2;
+}
+.skillList p{
+  grid-row: 2/3;
+}
+
+.projectContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(2, auto);
+}
+.subjectHeader{
+  width: fit-content;
+  padding: 0;
+}
+.projectTitle{
+  grid-column: 2/3;
+}
+.projectDesc{
+  grid-column: 2/3;
+  text-align: justify;
+}
+.projectImage{
+  grid-column: 3 / 4;
+  max-width: 80%;
+  padding-left: 10%;
+}
+.highlightPoints{
+  /*
+  background-color: #85c1e9;
+  color: #333;
+  */
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 2px;
+  border-radius: 4px;
+}
+#perrailImage{
+  max-width: 100%;
+}
+
+.footerContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.footerContainer p{
+  margin-top: 0;
+}
+.footerContainer .links{
+  display: inline-block;
+}
+.footerContainer a{
+  margin-right: 1%;
+  color: black;
+  float:  right;
+}
+.footerContainer a:hover{
+  background-color: rgb(113, 123, 253);
+  color: whitesmoke;
+  padding: 0 4px 0 4px;
+  border-radius: 4px;
+}
